@@ -11,13 +11,13 @@ character = {
 
 # for 반복문을 사용합니다.
 for key in character:
-    if type(character[key]) is str:
-        print(key , ":", character[key])
-    elif type(character[key]) is int:
-        print(key , ":", character[key])
-    elif type(character[key]) is dict:
+
+    if type(character[key]) is dict:
         for keys in character[key]:
             print(keys, ":", character[key][keys])
     elif type(character[key]) is list:
         for lists in character[key]:
             print(key, ":", lists)
+    else:
+        print(key, ":", character[key])
+    # 문자열과 정수형을 같이 처리하기 위해, else로 처리.
