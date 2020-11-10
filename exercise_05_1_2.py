@@ -1,7 +1,8 @@
 def mul(*values):
     result = 1
-    for i in range(len(values)):
-        result *= values[i]
+    for value in values:
+        # 가변 매개변수는 리스트처럼 사용!
+        result *= value
     return result
 
 # 함수를 호출합니다.
