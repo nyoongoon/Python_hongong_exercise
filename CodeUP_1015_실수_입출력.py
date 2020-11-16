@@ -4,3 +4,4 @@
 # format()함수 사용!
 a = float(input())
 print(format(a, ".2f"))
+# print("{:.1f}".format())도 가능!
